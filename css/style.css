@@ -278,12 +278,13 @@ line-height: 1.19;
 .box {
     display: flex;
     align-items: center;
+    border-bottom: 1px #ECECEC;
     
     height: 80px;
     width: 1230px;
     margin: auto;    
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;    
 }
 
 .contact-nav {
