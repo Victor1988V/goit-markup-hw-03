@@ -3,6 +3,7 @@
     --primary-text-color: #757575;
     --primary-bg-color: #FFFFFF;
     --primary-page-color: #212121;
+    --portfolio-button-color: #F5F4FA;
 }
 
 body {
@@ -39,14 +40,16 @@ body {
     color: var(--accent-color);
 }
 
-.logo-footer {    
+.logo-footer {
     margin-bottom: 20px;
+    margin-right: 0;
 
     color: var(--primary-bg-color);
 }
 
 .list-footer {
     background-color: #2F303A;
+    
 }
 
 .button {
@@ -61,11 +64,16 @@ body {
 }
 
 .portfolio-button {
-    background-color: var(--primary-bg-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+    
+    background-color: var(--portfolio-button-color);
     color: var(--primary-page-color);
     font-weight: 500;
     line-height: 1.6;    
 }
+
+
 
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -77,16 +85,24 @@ body {
     list-style: none;
 }
 
-.first-sections {
-    text-align: center;
-    margin-bottom: 94px;
+.section {    
+    padding-bottom: 94px;
 }
+
+.first-sections {
+    background-color: #2F303A;
+    text-align: center;    
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
 
 .first-title {
 
     margin-top: 0;
     margin-bottom: 30px;
-    color: var(--primary-page-color);
+    color: var(--primary-bg-color);
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -107,11 +123,13 @@ body {
 }
 
 .container {
+    display: flex;
+    align-items: center;
     
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 94px;    
+
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 0;
@@ -119,6 +137,8 @@ body {
 }
 
 .container-footer {
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -137,6 +157,7 @@ body {
     display: flex;
     margin-top: 0;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .person-list .item:not(:last-child) {
@@ -184,6 +205,8 @@ body {
 .filter {
     display: flex;
     justify-content: center;
+
+    margin-bottom: 34px;
 }
 
 .filter .item:not(:last-child) {
@@ -192,6 +215,7 @@ body {
 
 .contacts-list {
     padding-left: 0;   
+    margin: 0;
 }
 
 .contacts-list .item:not(:last-child) {
@@ -201,6 +225,7 @@ body {
 .work-list {
     display: flex;
     padding: 0;
+    margin: 0;
 }
 
 .work-list .item:not(:last-child) {
@@ -224,8 +249,10 @@ line-height: 1.19;
 
 .site-nav {
     display: flex;
+
     padding-inline-start: 0;
     list-style: none;   
+    margin: 0;
 }
 
 
@@ -235,6 +262,11 @@ line-height: 1.19;
 
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
+}
+
+.site-nav .item {
+    padding-top: 28.031px;
+    padding-bottom: 28.031px;
 }
 
 
@@ -280,7 +312,6 @@ line-height: 1.19;
     align-items: center;
     border-bottom: 1px #ECECEC;
     
-    height: 80px;
     width: 1230px;
     margin: auto;    
     padding-left: 15px;
@@ -288,8 +319,14 @@ line-height: 1.19;
 }
 
 .contact-nav {
+    display: flex;
+    list-style: none;
     margin-left: auto;
   
+}
+
+.link-second {
+    margin-left: 50px;
 }
 
 .header-link {
@@ -320,11 +357,14 @@ line-height: 1.9;
 .portfolio {
     display: flex;
     flex-wrap: wrap;    
+    
 }
 
 .portfolio .item {
     margin-right: 30px;
     margin-bottom: 30px;
+    width: calc((100% - 60px) / 3);
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio .item:nth-child(3n) {
@@ -333,4 +373,12 @@ line-height: 1.9;
 
 .portfolio .item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.item-text {
+    padding: 0 10px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ECECEC;
 }
