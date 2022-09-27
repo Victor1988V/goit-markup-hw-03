@@ -308,7 +308,7 @@ line-height: 1.19;
     margin-left: 50px;
 }
 
-.box {
+/* .box {
     display: flex;
     align-items: center;
     border-bottom: 1px #ECECEC;
@@ -317,7 +317,7 @@ line-height: 1.19;
     margin: auto;    
     padding-left: 15px;
     padding-right: 15px;    
-}
+} */
 
 .contact-nav {
     display: flex;
